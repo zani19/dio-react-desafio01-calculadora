@@ -8,4 +8,8 @@ padding: 20px;
  font-size: 24px;
  font-weight: 700;
  flex: 1;
+
+ &:hover{
+ opacity: 0.6;
+ }
 `;
