@@ -18,6 +18,12 @@ const App = () => {
     setCurrentNumber((prev) => `${prev === "0" ? "" : prev}${num}`);
   };
 
+  const handleAddDecimal = () => {
+    if (!currentNumber.includes(".")) {
+      setCurrentNumber((prev) => `${prev}.`);
+    }
+  }
+
   const handleOperation = (operation) => {
     if (firstNumber === "0") {
       setFirstNumber(String(currentNumber));
@@ -87,7 +93,7 @@ const App = () => {
           <Button label="x" onClick={() => handleOperation("*")} />
           <Button label="/" onClick={() => handleOperation("/")} />
           <Button label="c" onClick={handleOnClear} />
-          <Button label="." />
+          <Button label="." onClick={handleAddDecimal}/>
         </Row>
         <Row>
           <Button label="7" onClick={() => handleAddNumber("7")} />
