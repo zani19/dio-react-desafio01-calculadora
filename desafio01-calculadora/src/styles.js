@@ -20,12 +20,18 @@ export const Row = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 `
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-
+  align-items: center; 
 `
+
+export const Icon = styled.div`
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaffaa;
+`;
